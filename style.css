@@ -144,3 +144,18 @@ body {
   .Petal3.p4 {
     transform: rotate(157.5deg);
   }
+
+  /* Estilos para pantallas grandes */
+@media only screen and (min-width: 768px) {
+  /* Agrega tus estilos aquí */
+}
+
+/* Estilos para pantallas medianas */
+@media only screen and (max-width: 767px) {
+  /* Agrega tus estilos aquí */
+}
+
+/* Estilos para pantallas pequeñas */
+@media only screen and (max-width: 480px) {
+  /* Agrega tus estilos aquí */
+}

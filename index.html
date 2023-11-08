@@ -1,43 +1,17 @@
 <!DOCTYPE html>
-<html lang="es">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="Stylesheet" href="style.css">
-    <title>Flores 7w7</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/video.js@7.14.1/dist/video-js.min.css">
+ <script src="https://cdn.jsdelivr.net/npm/video.js@7.14.1/dist/video.min.js"></script>
 </head>
 <body>
-
-<div class="flower">
-    <div class="text-above">EL NO TE AMA</div>
-    <div class="mid">
-    </div>
-    <div class="Petal1 p1">
-    </div>
-    <div class="Petal1 p2">
-    </div>
-    <div class="Petal1 p3">
-    </div>
-    <div class="Petal1 p4">
-    </div>
-    <div class="Petal2 p1">
-    </div>
-    <div class="Petal2 p2">
-    </div>
-    <div class="Petal2 p3">
-    </div>
-    <div class="Petal2 p4">
-    </div>
-    <div class="Petal3 p1">
-    </div>
-    <div class="Petal3 p2">
-    </div>
-    <div class="Petal3 p3">
-    </div>
-    <div class="Petal3 p4">
-    </div>
-    <div class="text-below">TQM CTM</div>
-  </div>
+ <video id="miPlayer" class="video-js" controls preload="auto" width="640" height="360" data-setup="{}">
+    <source src="https://e2.tiofutbol.com:440/live1/tracks-v1a1/mono.m3u8?remote=38.25.5.58&token=ccfb4c2af4a8d9fcd146decfa1354e591afacf64-247b1e21075bfb60b12a68c523d6e05b-1699489719-1699478919" type="application/x-mpegURL">
+ </video>
+ <script>
+    var player = videojs('miPlayer');
+    player.play();
+ </script>
 </body>
 </html>
